@@ -13,6 +13,8 @@
 		E495246A245C47C3003033DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4952468245C47C3003033DB /* Main.storyboard */; };
 		E495246C245C47C7003033DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E495246B245C47C7003033DB /* Assets.xcassets */; };
 		E495246F245C47C7003033DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E495246D245C47C7003033DB /* LaunchScreen.storyboard */; };
+		E49530C8245D575200D562F2 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E49530C7245D575200D562F2 /* Minecraft.ttf */; };
+		E49530CA245D616100D562F2 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = E49530C9245D616100D562F2 /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E495246B245C47C7003033DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E495246E245C47C7003033DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4952470245C47C7003033DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E49530C7245D575200D562F2 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		E49530C9245D616100D562F2 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		E4952461245C47C3003033DB /* Space Cal */ = {
 			isa = PBXGroup;
 			children = (
+				E4DD910324BC7AC700627B7B /* Controller */,
+				E4DD910024BC7A6900627B7B /* Resourses */,
 				E4952462245C47C3003033DB /* AppDelegate.swift */,
 				E4952464245C47C3003033DB /* SceneDelegate.swift */,
-				E4952466245C47C3003033DB /* ViewController.swift */,
 				E4952468245C47C3003033DB /* Main.storyboard */,
-				E495246B245C47C7003033DB /* Assets.xcassets */,
 				E495246D245C47C7003033DB /* LaunchScreen.storyboard */,
+				E495246B245C47C7003033DB /* Assets.xcassets */,
 				E4952470245C47C7003033DB /* Info.plist */,
 			);
 			path = "Space Cal";
+			sourceTree = "<group>";
+		};
+		E4DD910024BC7A6900627B7B /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				E49530C7245D575200D562F2 /* Minecraft.ttf */,
+				E49530C9245D616100D562F2 /* btn.wav */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		E4DD910324BC7AC700627B7B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E4952466245C47C3003033DB /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +147,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E49530CA245D616100D562F2 /* btn.wav in Resources */,
 				E495246F245C47C7003033DB /* LaunchScreen.storyboard in Resources */,
 				E495246C245C47C7003033DB /* Assets.xcassets in Resources */,
+				E49530C8245D575200D562F2 /* Minecraft.ttf in Resources */,
 				E495246A245C47C3003033DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,14 +308,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Space Cal/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Shayan.ab.Space-Cal";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,14 +329,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Space Cal/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Shayan.ab.Space-Cal";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
